@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Color Switch+</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top HUD -->
+  <div id="ui">
+    <div id="score-board">
+      <span id="score">0</span>
+      <span id="high-score">Best: 0</span>
+    </div>
+    <div id="hud-right">
+      <div id="lives">
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+        <span class="heart">❤️</span>
+      </div>
+      <div id="power-ups">
+        <span id="slow-indicator"  class="indicator" title="Slow Motion">🐢</span>
+        <span id="score2-indicator" class="indicator" title="Double Score">✨</span>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Left / Right movement buttons (touch) -->
+  <button id="btn-left"  class="move-btn hidden">◀</button>
+  <button id="btn-right" class="move-btn hidden">▶</button>
+
+  <!-- Overlay -->
+  <div id="overlay">
+    <h1 id="overlay-title">Color Switch+</h1>
+    <p  id="overlay-sub">Tap to jump · ◀▶ to move</p>
+    <p  id="overlay-score" class="hidden"></p>
+    <button id="action-btn">▶ Start</button>
+    <p id="pause-hint">Press <kbd>P</kbd> or <kbd>Esc</kbd> to pause</p>
+  </div>
+
+  <button id="pause-btn" class="hidden">⏸</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
