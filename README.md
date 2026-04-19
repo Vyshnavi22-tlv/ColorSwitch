@@ -115,11 +115,3 @@ Developed as a project to practice:
 - UI/UX design  
 
 ---
-
-## 📜 License
-
-This project is open-source and free for educational use.
-
----
-
-💡 Tip: Keep improving the UI and add features to make your game stand out!
